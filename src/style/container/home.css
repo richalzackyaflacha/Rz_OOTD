@@ -1,0 +1,514 @@
+/* ------------------------------ Home Page ------------------------------ */
+.home-page {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+
+/* ------------------------------ Jumbotron ------------------------------ */
+.home-jumbotron {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Background */
+.home-jumbotron .bg-home-jumbotron{
+    width: 100%;
+    height: 85vh;
+    position: relative;
+}
+.home-jumbotron .bg-home-jumbotron img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+/* Jumbotron Content */
+.home-jumbotron .bg-content-jumbotron {
+    width: 70%;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    background-image: linear-gradient(to right, black, black, rgba(0, 0, 0, 0.8), transparent);
+}
+.bg-content-jumbotron .content-jumbotron {
+    width: fit-content;
+}
+.bg-content-jumbotron .content-text {
+    width: auto;
+    height: auto;
+    border: 4px solid white;
+    border-left: none;
+    color: white;
+    letter-spacing: 2px;
+    padding: 80px 100px 80px 0px;
+    line-height: 0;
+}
+.bg-content-jumbotron .content-text .title {
+    font-size: 80px;
+    font-weight: 500;
+}
+.bg-content-jumbotron .content-text .desc {
+    font-size: 40px;
+    margin-top: 60px;
+}
+.bg-content-jumbotron .content-button {
+    width: 100%;
+    margin-top: 15px;
+}
+.bg-content-jumbotron .content-button button {
+    width: 48%;
+    height: 45px;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .5s;
+}
+.bg-content-jumbotron .content-button button:hover {
+    transform: scale(1.04);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4);
+}
+.bg-content-jumbotron .content-button .btn-style {
+    background-image: linear-gradient(to right, #3d0000, red);
+    margin-right: 15px;
+}
+.bg-content-jumbotron .content-button .btn-galeri {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Jumbotron */
+.home-jumbotron .footer-jumbotron {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+.footer-jumbotron .sosmed {
+    margin-left: 50px;
+}
+.footer-jumbotron .sosmed li {
+    list-style: none;
+    float: left;
+    margin-right: 25px;
+}
+.footer-jumbotron .sosmed li a,
+.footer-jumbotron .btn-next a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: .5s;
+}
+.footer-jumbotron .sosmed li a:hover,
+.footer-jumbotron .btn-next a:hover {
+    color: white;
+}
+.footer-jumbotron .btn-next {
+    margin-right: 50px;
+}
+
+
+/* --------------- Tablet Jumbotron --------------- */
+@media only screen and (max-width: 900px) { 
+    /* ----- Jumbotron ----- */
+    .home-jumbotron {
+        align-items: flex-start;
+    }
+
+    /* Background */
+    .home-jumbotron .bg-home-jumbotron{
+        height: 76vh;
+        margin-top: 50px;
+    }
+    .home-jumbotron .bg-home-jumbotron img {
+        object-position: bottom right;
+    }
+
+    /* Jumbotron Content */
+    .home-jumbotron .bg-content-jumbotron {
+        width: 100%;
+        align-items: flex-end;
+        padding-left: 0px;
+        background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.9),  transparent, transparent);
+    }
+    .bg-content-jumbotron .content-jumbotron {
+        margin-bottom: 150px;
+        margin-left: 50px;
+    }
+    .bg-content-jumbotron .content-text {
+        padding: 90px 100px 90px 0px;
+    }
+    .bg-content-jumbotron .content-text .title {
+        font-size: 110px;
+    }
+    .bg-content-jumbotron .content-text .desc {
+        font-size: 50px;
+        margin-top: 80px;
+    }
+    .bg-content-jumbotron .content-button {
+        margin-top: 20px;
+    }
+    .bg-content-jumbotron .content-button button {
+        height: 60px;
+        font-size: 25px;
+    }
+
+    /* Footer Jumbotron */
+    .home-jumbotron .footer-jumbotron {
+        height: 80px;
+    }
+}
+
+
+/* --------------- Mobile Jumbotron --------------- */
+@media only screen and (max-width: 600px) { 
+    /* ---------- Home Page ---------- */
+    .home-page {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* ----- Jumbotron ----- */
+    .home-jumbotron {
+        align-items: flex-start;
+    }
+
+    /* Background */
+    .home-jumbotron .bg-home-jumbotron{
+        height: 57vh;
+        margin-top: 50px;
+    }
+    .home-jumbotron .bg-home-jumbotron img {
+        object-position: bottom right;
+    }
+
+    /* Jumbotron Content */
+    .home-jumbotron .bg-content-jumbotron {
+        width: 100%;
+        align-items: flex-end;
+        padding-left: 0px;
+        background-image: linear-gradient(to top, black, black, rgba(0, 0, 0, 0.9),  transparent, transparent);
+    }
+    .bg-content-jumbotron .content-jumbotron {
+        margin-bottom: 150px;
+        margin-left: 0px;
+        width: 100%;
+    }
+    .bg-content-jumbotron .content-text {
+        padding: 70px 0px;
+        margin: 0px 10px;
+    }
+    .bg-content-jumbotron .content-text .title {
+        font-size: 70px;
+    }
+    .bg-content-jumbotron .content-text .desc {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    .bg-content-jumbotron .content-button {
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .bg-content-jumbotron .content-button button {
+        height: 50px;
+        width: 45%;
+        font-size: 20px;
+    }
+
+    /* Footer Jumbotron */
+    .home-jumbotron .footer-jumbotron {
+        height: 80px;
+    }
+    .footer-jumbotron .sosmed {
+        margin-left: 15px;
+    }
+    .footer-jumbotron .sosmed li {
+        margin-right: 20px;
+        font-size: 20px;
+    }
+    .footer-jumbotron .btn-next {
+        margin-right: 15px;
+    }
+}
+
+
+/* ------------------------------ Content Home ------------------------------ */
+.home-content {
+    max-width: 100%;
+    min-height: 100vh;
+    padding: 50px 100px 30px 100px;
+}
+
+/* -------------------- New Photo -------------------- */
+.home-content .new-photo,
+.home-content .style-photo,
+.home-content .carousell-photo {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Title */
+.new-photo .title-new-photo,
+.style-photo .title-style-photo,
+.carousell-photo .title-carousell-photo {
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Button More Photo */
+.new-photo .more-photo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.new-photo .more-photo a {
+    text-decoration: none;
+    font-size: 20px;
+    transition: .5s;
+}
+.new-photo .more-photo a:hover {
+    text-decoration: underline;
+}
+
+/* Card New Photo */
+.new-photo .card-new-photo {
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+}
+.card-new-photo .card-photo {
+    width: 340px;
+    height: 500px;
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+.card-new-photo .card-photo img {
+    height: 400px;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    transition: .5s;
+    cursor: pointer;
+}
+.card-new-photo .card-photo img:hover { 
+    filter: brightness(.9);
+}
+.card-new-photo .card-photo::before {
+    content: "";
+    width: 320px;
+    height: 400px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.card-new-photo .swiper-slide-active img,
+.card-new-photo .swiper-slide-active .card-photo::before {
+    transform: scale(1.09) !important;
+    transition: .5s ease-in-out !important;
+}
+.card-new-photo .swiper-pagination-bullet-active {
+    background-color: red !important;
+}
+
+
+/* --------------- Tablet New Photo Content --------------- */
+@media only screen and (max-width: 900px) { 
+    .home-content {
+        padding: 50px 50px;
+    }
+
+    /* Card New Photo */
+    .card-new-photo .card-photo {
+        margin-left: -55px;
+    }
+    .card-new-photo .card-photo img:hover { 
+        filter: brightness(1);
+    }
+}
+
+
+/* --------------- Mobile New Photo Content --------------- */
+@media only screen and (max-width: 600px) {
+    .home-content {
+        padding: 50px 15px;
+    }
+
+    /* Card New Photo */
+    .new-photo .card-new-photo {
+        height: 460px;
+        margin-bottom: 10px;
+    }
+    .card-new-photo .card-photo {
+        height: 435px;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 0px;
+        padding: 20px 0px 0px 0px;
+    }
+    .card-new-photo .card-photo img {
+        height: 380px;
+        margin-left: -15px;
+    }
+    .card-new-photo .card-photo::before {
+        width: 305px;
+        height: 380px;
+        margin-top: 20px;
+    }
+    .card-new-photo .swiper-slide-active img,
+    .card-new-photo .swiper-slide-active .card-photo::before {
+        transform: scale(1.0) !important;
+    }
+} 
+
+
+/* -------------------- Style Photo -------------------- */
+.style-photo .my-style-photo {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.style-photo .my-style-photo .my-pict {
+    max-height: 100%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin: 0 auto;
+}
+.style-photo .my-style-photo .my-pict-content {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.style-photo .my-style-photo img {
+    max-height: 100%;
+    width: 100%;
+    transition: 1.s;
+}
+
+.style-photo .button-to-style {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.style-photo .button-to-style button {
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+    transition: .5s;
+    box-shadow: 0px 0px 10px black;
+    cursor: pointer;
+}
+.style-photo .button-to-style button:hover {
+    transform: scale(1.07);
+}
+
+
+/* --------------- Mobile Style Photo Content --------------- */
+@media only screen and (max-width: 600px) { 
+    .style-photo .my-style-photo .my-pict {
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .style-photo .button-to-style {
+        margin-top: -20px;
+    }
+}
+
+
+/* ------------------------------ Instagram Post Home ------------------------------ */
+.ig-post {
+    max-width: 100%;
+    height: auto;
+    padding: 20px 100px 30px 100px;
+    background-color: #272727;
+    text-align: center;
+}
+.ig-post p,
+.ig-post a {
+    font-size: 35px;
+    color: white;
+}
+
+.ig-post .content-ig-post {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 170px;
+    gap: 10px;
+}
+.ig-post .content-ig-post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: .5s;
+}
+.ig-post .content-ig-post img:hover {
+    margin-top: -10px;
+}
+
+
+/* --------------- Tablet Ig Post Photo Content --------------- */
+@media only screen and (max-width: 900px) { 
+    .ig-post p,
+    .ig-post a {
+        font-size: 33px;
+    }
+
+    .ig-post .content-ig-post {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 180px;
+    }
+}
+
+
+/* --------------- Mobile Ig Post Photo Content --------------- */
+@media only screen and (max-width: 600px) { 
+    .ig-post {
+        padding: 20px;
+    }
+
+    .ig-post p,
+    .ig-post a {
+        font-size: 20px;
+    }
+
+    .ig-post .content-ig-post {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 160px;
+    }
+    .ig-post .content-ig-post img:hover {
+        margin-top: 0px;
+    }
+}

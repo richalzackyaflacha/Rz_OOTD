@@ -1,0 +1,223 @@
+/* ------------------------------ About Page ------------------------------ */
+.about-page {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+
+/* ------------------------------ Jumbotron ------------------------------ */
+.about-page .about-jumbotron {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.about-jumbotron img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(.6);
+}
+
+.about-jumbotron .jumbotron-content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+.about-jumbotron .jumbotron-content p {
+    color: white;
+    font-size: 120px;
+    font-weight: 500;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    line-height: 0;
+}
+.about-jumbotron .jumbotron-content .button-to-about {
+    margin-top: 180px;
+}
+.jumbotron-content .button-to-about button {
+    font-size: 70px;
+    border: none;
+    background-color:transparent;
+    cursor: pointer;
+    animation: updown 1s linear alternate infinite;
+}
+.jumbotron-content .button-to-about button a{
+    color: red;
+}
+@keyframes updown {
+    0% { margin-top: 0; }
+    100% { margin-top: 15px; }
+}
+
+
+/* --------------- Mobile Jumbotron --------------- */
+@media only screen and (max-width: 600px) { 
+    .about-jumbotron .jumbotron-content p { 
+        font-size: 80px;
+    }
+}
+
+
+/* ------------------------------ Content ------------------------------ */
+.about-page .about-content {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+.about-content .about-rzootd {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.about-content .about-rzootd .image-content {
+    height: 520px;
+    width: fit-content;
+    position: relative;
+}
+.about-rzootd .image-content img {
+    height: 100%;
+    position: relative;
+    z-index: 5;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+}
+.about-rzootd .image-content::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: red;
+    margin-top: 20px;
+    margin-left: 20px;
+    z-index: 4;
+}
+.about-content .about-rzootd .text-content {
+    margin-left: 50px;
+}
+.about-rzootd .text-content h1 {
+    font-size: 40px;
+    font-weight: 500 !important;
+    margin-bottom: 20px;
+}
+
+.about-content .profile {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.about-content .profile h1 {
+    font-weight: 500 !important;
+    letter-spacing: .5px;
+}
+.about-content .profile .content-profile {
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+}
+.profile .content-profile .content-image {
+    width: 40%;
+    height: 360px;
+    position: relative;
+}
+.profile .content-profile .content-image img {
+    height: 360px;
+    width: 360px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    margin-left: -100px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6);
+}
+.profile .content-profile .content-text {
+    width: 55%;
+    text-align: left;
+}
+.content-profile .content-text p { 
+    margin-top: 10px;
+}
+.content-profile .content-text .sosmed {
+    margin-top: 20px;
+}
+.content-profile .content-text .sosmed li {
+    list-style-type: none;
+    float: left;margin-right: 20px;
+}
+.content-profile .content-text .sosmed li a {
+    text-decoration: none;
+    font-size: 25px;
+}
+.content-profile .content-text .sosmed li a:hover {
+    color: red;
+}
+
+/* --------------- Tablet Content --------------- */
+@media only screen and (max-width: 900px) { 
+    .about-content .about-rzootd {
+        height: auto;
+        padding: 100px 0px 50px 0px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-content .about-rzootd .image-content {
+        height: 550px;
+    }
+    
+    .about-content .profile .content-profile {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0px;
+    }
+    .profile .content-profile .content-image {
+        width: 100%;
+    }
+    .profile .content-profile .content-image img {
+        margin-left: 0px;
+    }
+    .profile .content-profile .content-text {
+        width: 80%;
+        margin-top: 50px;
+    }
+}
+
+
+/* --------------- Tablet Content --------------- */
+@media only screen and (max-width: 900px) { 
+    .about-content .about-rzootd .image-content {
+        height: 350px;
+    }
+    .about-content .about-rzootd .text-content {
+        margin-left: 0px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .about-rzootd .text-content h1 {
+        font-size: 33px;
+    }
+
+    .about-content .profile {
+        width: 90%;
+    }
+    .profile .content-profile .content-image img {
+        width: 300px;
+        height: 350px;
+    }
+    .profile .content-profile .content-text {
+        width: 80%;
+        margin-top: 30px;
+    }
+}

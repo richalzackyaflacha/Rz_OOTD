@@ -1,0 +1,311 @@
+/* ------------------------------ Style Page ------------------------------ */
+.style-page {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+
+/* ------------------------------ Jumbotron ------------------------------ */
+.style-jumbotron {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, #272727, #272727, transparent);
+    position: relative;
+}
+
+
+.style-jumbotron img {
+    max-width: 100%;
+    height: auto;
+    filter: brightness(.6);
+}
+
+
+.style-jumbotron .jumbotron-content {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -30px;
+}
+.style-jumbotron .jumbotron-content .top-text{
+    padding-right: 130px;
+    font-size: 120px;
+    color: white;
+    font-weight: 500;
+    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+    line-height: 100px;
+}
+.style-jumbotron .jumbotron-content .bottom-text{
+    text-align: right;
+    font-size: 120px;
+    font-weight: 500;
+    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+    line-height: 100px;
+}
+
+.jumbotron-content .button-to-content {
+    width: 100%;
+    position: absolute;
+    margin-top: 120px;
+    text-align: center;
+}
+.jumbotron-content .button-to-content button { 
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: 3px solid red;
+    font-size: 22px;
+    width: 200px;
+    height: 60px;
+    box-shadow: 0px 0px 30px white;
+    cursor: pointer;
+    transition: .5s;
+}
+.jumbotron-content .button-to-content button:hover {
+    transform: scale(1.05);
+}
+
+
+/* --------------- Tablet Jumbotron --------------- */
+@media only screen and (max-width: 900px) { 
+    /* ----- Jumbotron ----- */ 
+    .style-jumbotron {
+        max-height: 100vh;
+    }
+    
+    
+    .style-jumbotron img {
+        max-width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        filter: brightness(.6);
+    }
+    
+    
+    .style-jumbotron .jumbotron-content {
+        width: 80%;
+    }
+    .style-jumbotron .jumbotron-content .top-text{
+        padding-right: 0px;
+    }
+    
+    .jumbotron-content .button-to-content {
+        margin-top: 200px;
+    }
+}
+
+
+/* --------------- Mobile Jumbotron --------------- */
+@media only screen and (max-width: 600px) { 
+    .style-jumbotron {
+        width: 100%;
+        max-height: 100vh;
+    }
+    
+    
+    .style-jumbotron img {
+        height: 80vh;
+        margin-top: 5vh;
+    }
+    
+    
+    .style-jumbotron .jumbotron-content {
+        width: 90%;
+    }
+    .style-jumbotron .jumbotron-content .top-text{
+        font-size: 80px;
+        line-height: 80px;
+    }
+    .style-jumbotron .jumbotron-content .bottom-text{
+        text-align: center;
+        font-size: 90px;
+        line-height: 80px;
+    }
+    
+    .jumbotron-content .button-to-content {
+        margin-top: 120px;
+    }
+    .jumbotron-content .button-to-content button { 
+        font-size: 20px;
+        width: 180px;
+        height: 55px;
+        box-shadow: 0px 0px 30px black;
+    }
+}
+
+
+/* ------------------------------ Style Content ------------------------------ */
+.style-page .style-content {
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+}
+
+/* ----- Header ----- */
+.style-content .cover-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.style-content .header-content {
+    width: 80%;
+    height: 60px;
+    background-color: #585858;
+    position: relative;
+    margin-left: 10px;
+    z-index: 5 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 1px;
+}
+.style-content .header-contentD {
+    width: 80%;
+    height: 60px;
+    position: absolute;
+    z-index: 3;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+/* ----- Content Picture ----- */
+.style-content .cover-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.style-content .cover-content .outfit-style {
+    width: 80%;
+    height: auto;
+}
+
+.outfit-style .content-outfit {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-color: #585858;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+.outfit-style .content-outfit .content-outfit-pict {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-outfit .content-outfit-pict .img-btn {
+    max-height: 90%;
+    width: 80%;
+    position: relative;
+}
+.content-outfit .content-outfit-pict img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7),
+                0px 0px 30px rgba(0, 0, 0, 0.4);
+}
+.content-outfit .content-outfit-pict .img-btn:hover .button-to-galery { 
+    opacity: 1;
+}
+.content-outfit .content-outfit-pict .button-to-galery {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background-image: linear-gradient(to bottom, transparent,rgba(0, 0, 0, 0.8), black);
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    z-index: 5;
+    transition: .5s;
+}
+.content-outfit .content-outfit-pict .button-to-galery a {
+    color: White;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+.outfit-style .content-outfit .content-outfit-detail {
+    width: 60%;
+    height: 100%;
+}
+.outfit-style .content-outfit .content-outfit-detail img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+
+/* --------------- Tablet Content --------------- */
+@media only screen and (max-width: 900px) { 
+    /* ----- Header ----- */
+    .style-content .header-content {
+        font-size: 30px;
+    }
+
+    /* ----- Content Picture ----- */
+    .style-content .cover-content .outfit-style {
+        width: 90%;
+    }
+
+    .outfit-style .content-outfit {
+        height: 400px;
+    }
+    .content-outfit .content-outfit-pict .button-to-galery {
+        opacity: 1;
+    }
+
+    .outfit-style .content-outfit .content-outfit-detail {
+        display: flex;
+        align-items: center;
+    }
+} 
+
+
+/* --------------- Mobile Content --------------- */
+@media only screen and (max-width: 900px) { 
+    /* ----- Header ----- */
+    .style-content .cover-header {
+        margin-bottom: 60px;
+    }
+    .style-content .header-content {
+        width: 90%;
+        font-size: 20px;
+    }
+    .style-content .header-contentD {
+        width: 90%;
+        height: 60px;
+    }
+
+    /* ----- Content Picture ----- */
+    .outfit-style .content-outfit {
+        width: 100%;
+        height: auto;
+        padding: 20px 0px;
+        display: block;
+    }
+    .outfit-style .content-outfit .content-outfit-pict {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    .content-outfit .content-outfit-pict .button-to-galery a {
+        font-size: 20px;
+    }
+
+    .outfit-style .content-outfit .content-outfit-detail {
+        width: 100%;
+        height: 100%;
+    }
+}

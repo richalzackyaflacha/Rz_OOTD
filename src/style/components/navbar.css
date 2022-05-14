@@ -1,0 +1,211 @@
+/* ---------- Navbar ---------- */
+.navbar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .5s;
+}
+.navbar-bg {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* ----- Logo ----- */
+.navbar .rz-logo {
+    margin-left: 50px;
+    height: 50px;
+}
+.rz-logo img {
+    height: 100%;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+}
+
+
+/* ----- Menu Bar ----- */
+.navbar .btn-menu-bar {
+    display: none;
+}
+
+
+/* ----- Navigation ----- */
+.navbar .navigation {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+/* Link Menu */
+.navbar .navigation nav {
+    position: relative;
+    margin-right: 30px;
+}
+.navbar .navigation nav li {
+    position: relative;
+    list-style-type: none;
+    float: left;
+    padding: 0px 10px;
+    margin: 0px 5px;
+}
+.navbar .navigation nav a {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    transition: .5s;
+}
+.navbar .navigation nav a:hover,
+.navbar .navigation nav a.active {
+    color: white;
+    transition: .5s;
+}
+.navbar .navigation nav a::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -5px;
+    transition: background-color .5s;
+}
+.navbar .navigation nav a.active::before {
+    background-color: white;
+}
+
+/* Button Dark Mode */
+.navbar .navigation .toggle-dm button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    font-size: 23px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+    opacity: .6;
+    transition: .5s;
+}
+.navbar .navigation .toggle-dm button:hover,
+.navbar .navigation .toggle-dm button:active {
+    opacity: 1;
+}
+
+
+/* ----- Mobile Navigation ----- */
+.mobile-nav {
+    display: none;
+}
+
+
+/* --------------- Tablet --------------- */
+@media only screen and (max-width: 900px) { 
+    /* ----- Navigation ----- */
+    .navbar .navigation {
+        justify-content: space-between;
+        margin-right: 50px;
+        width: 100%;
+        margin-left: 150px;
+    }
+}
+
+
+/* --------------- Mobile --------------- */
+@media only screen and (max-width: 600px) {  
+    /* ----- Logo ----- */
+    .navbar .rz-logo {
+        margin-left: 5px;
+    }
+
+    /* ----- Menu Bar ----- */
+    .navbar .btn-menu-bar {
+        display: block;
+        margin-right: 10px;
+    }
+    .navbar .btn-menu-bar a {
+        color: white;
+        font-size: 35px;
+    }
+
+    /* ----- Navigation ----- */
+    .navbar .navigation {
+        display: none;
+    }
+
+    /* ----- Mobile Navigation ----- */
+    #navigation {
+        display: flex;
+        width: 70%;
+        height: 100vh;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        position: fixed;
+        z-index: 150;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
+    }
+    #navigation:target {
+        visibility: visible;
+        opacity: 1;
+    }
+    .mobile-nav .btn-back {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        cursor: pointer;
+    }
+    .mobile-nav .btn-back a {
+        font-size: 30px;
+        color: white;
+    }
+    .mobile-nav .mobile-menu-nav {
+        text-align: center;
+        width: 80%;
+        height: fit-content;
+    }
+    .mobile-nav nav a {
+        text-decoration: none;
+        font-size: 25px;
+        letter-spacing: 1px;
+        color: rgba(255, 255, 255, 0.5);
+        line-height: 0;
+    }
+    .mobile-nav nav a.active {
+        color: white;
+    }
+    .mobile-nav nav li {
+        list-style-type: none;
+        margin-bottom: 30px;
+        border: 3px solid rgba(255, 255, 255, 0.5);
+        padding: 25px 0px;
+    }
+    .mobile-nav nav a.active li {
+        border: 3px solid white;
+    }
+    .mobile-nav .toggle-dm p {
+        color: white;
+        font-size: 20px;
+    }
+    .mobile-nav .toggle-dm button {
+        margin-top: 10px;
+        font-size: 30px;
+        line-height: 0;
+        color: white;
+        background-color: black;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+}
