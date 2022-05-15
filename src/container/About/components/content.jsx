@@ -50,22 +50,22 @@ const AboutContent = () => {
                         
                         <div className="sosmed">
                             <li>
-                                <a href="" target="_blank">
+                                <a href="https://www.instagram.com/richalzacky/" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} />
                                 </a>
                             </li>
                             <li>
-                                <a href="" target="_blank">
+                                <a href="https://github.com/richalzackyaflacha" target="_blank">
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
                             </li>
                             <li>
-                                <a href="" target="_blank">
+                                <a href="https://twitter.com/" target="_blank">
                                     <FontAwesomeIcon icon={faTwitter} />
                                 </a>
                             </li>
                             <li>
-                                <a href="" target="_blank">
+                                <a href="https://www.youtube.com/channel/UCYpN1z_35f_joMNOv1ounyw" target="_blank">
                                     <FontAwesomeIcon icon={faYoutube} />
                                 </a>
                             </li>
