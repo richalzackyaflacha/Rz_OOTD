@@ -53,12 +53,12 @@ const HomeJumbotron = () => {
                         </a>
                     </li>
                     <li>
-                        <a target="_blank" href="">
+                        <a target="_blank" href="https://github.com/richalzackyaflacha">
                             <FontAwesomeIcon icon={faGithub} />
                         </a>
                     </li>
                     <li>
-                        <a target="_blank" href="">
+                        <a target="_blank" href="https://twitter.com/">
                             <FontAwesomeIcon icon={faTwitter} />
                         </a>
                     </li>

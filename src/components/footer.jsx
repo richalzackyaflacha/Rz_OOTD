@@ -89,13 +89,13 @@ const Footer = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/richalzackyaflacha" target="_blank">
+                            <a href="https://github.com/richalzackyaflacha/Rz_OOTD" target="_blank">
                                 <FontAwesomeIcon icon={faGithub} />
                                 &ensp;Git Hub
                             </a>
                         </li>
                         <li>
-                            <a href="" target="_blank">
+                            <a href="https://twitter.com/" target="_blank">
                                 <FontAwesomeIcon icon={faTwitter} />
                                 &ensp;Twitter
                             </a>
