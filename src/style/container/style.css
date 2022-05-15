@@ -140,7 +140,7 @@
 .style-page .style-content {
     width: 100%;
     height: auto;
-    padding: 50px 0px;
+    padding: 50px 0px 0px 0px;
 }
 
 /* ----- Header ----- */
@@ -193,6 +193,7 @@
     background-color: #585858;
     border-radius: 15px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 50px;
 }
 .outfit-style .content-outfit .content-outfit-pict {
     width: 40%;
