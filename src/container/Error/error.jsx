@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 // Add CSS
 import "../../style/container/error.css";
@@ -11,10 +11,10 @@ function ErrorPage() {
         <div className="error">
             <div className="error-content">
                 <h1>ERROR!!</h1>
-
+ {/* onClick={() => navigate(-1)} */}
                 <p>Halaman Tidak Dapat Ditemukan</p>
 
-                <button onClick={() => navigate(-1)}>Kembali</button>
+                <Link to="/"><button>Kembali</button></Link>
             </div>
         </div>
     );
