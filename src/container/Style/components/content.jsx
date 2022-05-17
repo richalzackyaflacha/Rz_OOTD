@@ -6,7 +6,7 @@ import OutfitStyle from "./content/outfitStyle";
 const StyleContent = () => {
     return (
         <div className="style-content" id="StyleContent">
-            <div className="cover-header">
+            <div className="cover-header" data-aos="fade-up" data-aos-duration="1000">
                 <div className="header-content">
                     <p>#KerenItuGakHarusMahal</p>
                 </div>

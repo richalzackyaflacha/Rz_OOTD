@@ -13,7 +13,7 @@ const OutfitStyle = () => {
     return (
         <div className="outfit-style">
 
-            <div className="content-outfit">
+            <div className="content-outfit" data-aos="fade-up" data-aos-duration="1000">
                 <div className="content-outfit-pict">
                     <div className="img-btn">
                         <img src={OutfitPict1} alt="Outfit Style" />
@@ -31,7 +31,7 @@ const OutfitStyle = () => {
             </div>
 
 
-            <div className="content-outfit">
+            <div className="content-outfit" data-aos="fade-up" data-aos-duration="1000">
                 <div className="content-outfit-pict">
                     <div className="img-btn">
                         <img src={OutfitPict2} alt="Outfit Style" />

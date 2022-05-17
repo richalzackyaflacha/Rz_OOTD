@@ -127,7 +127,7 @@ const ContentGalery = () => {
             <div className="rz-galery">
                 {data.map(( item, index ) => {
                     return (
-                        <div className="galery-card">
+                        <div className="galery-card" data-aos="fade-up" data-aos-duration="1000">
                             {/* Picture */}
                             <img src={item.imgGalery} alt="Galery" key={index} onClick={() => getImgDetail(item)} />
 
