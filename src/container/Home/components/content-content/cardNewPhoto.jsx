@@ -57,9 +57,7 @@ const CardNewPhoto = () => {
                 <Swiper
                     breakpoints={{
                         900: {
-                            width: 900,
                             slidesPerView: 3,
-                            spaceBetween: 260
                         },
                         700: {
                             slidesPerView: 2,
