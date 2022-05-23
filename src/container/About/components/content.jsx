@@ -26,7 +26,7 @@ const AboutContent = () => {
                 {/* Text */}
                 <div className="text-content" data-aos="fade-up" data-aos-duration="1000">
                     <h1>Tentang Rz OOTD</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quia enim error ratione quis laboriosam. Animi, temporibus placeat. Nisi excepturi totam autem quae facilis, labore voluptate magnam mollitia minima saepe?</p>
+                    <p>Rz OOTD adalah salah satu project dari Rz Project berupa website fashion, yang berisi foto-foto, style, OOTD, dan outfit inspiration.</p>
                 </div>
             </div>
 
@@ -46,7 +46,7 @@ const AboutContent = () => {
                     <div className="content-text" data-aos="fade-up" data-aos-duration="1500">
                         <h1>Richal Zacky Aflacha</h1>
 
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At modi eaque eos maiores expedita quis quidem fugiat, aspernatur dicta, illum dolores incidunt maxime doloribus qui! Numquam unde fugit magni velit.</p>
+                        <p>Saya adalah Devloper dari Rz Project khususnya Rz OOTD, dan juga saya sebagai model dari website ini. Klik link sosial media di bawah untuk melihat profil saya.</p>
                         
                         <div className="sosmed">
                             <li>
