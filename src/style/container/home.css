@@ -462,12 +462,12 @@
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: 170px;
     gap: 10px;
 }
 .ig-post .content-ig-post img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     object-position: center;
     border: 1px solid white;
@@ -488,7 +488,6 @@
 
     .ig-post .content-ig-post {
         grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 180px;
     }
 }
 
@@ -506,7 +505,6 @@
 
     .ig-post .content-ig-post {
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 160px;
     }
     .ig-post .content-ig-post img:hover {
         margin-top: 0px;

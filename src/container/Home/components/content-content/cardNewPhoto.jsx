@@ -10,9 +10,11 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 
 // Add photos
-import NewPhoto1 from "../../../../assets/img/NewPhoto1.jpg"
-import NewPhoto2 from "../../../../assets/img/NewPhoto2.jpg"
-import NewPhoto3 from "../../../../assets/img/NewPhoto3.jpg"
+import NewPhoto1 from "../../../../assets/img/ootdManggarai1.jpg"
+import NewPhoto2 from "../../../../assets/img/ootdManggarai2.jpg"
+import NewPhoto3 from "../../../../assets/img/ootdManggarai3.jpg"
+import NewPhoto4 from "../../../../assets/img/ootdManggarai4.jpg"
+
 
 // Add Fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -31,6 +33,10 @@ const CardNewPhoto = () => {
         {
             id: 3,
             imgSrc: NewPhoto3,
+        },
+        {
+            id: 4,
+            imgSrc: NewPhoto4,
         }
     ]
 

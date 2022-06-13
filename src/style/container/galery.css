@@ -92,7 +92,8 @@
     height: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    row-gap: 100px;
+    column-gap: 50px;
 }
 
 .rz-galery .galery-card {
@@ -100,7 +101,7 @@
 }
 .rz-galery .galery-card img {
     max-width: 100%;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
     transition: .5s;
 }

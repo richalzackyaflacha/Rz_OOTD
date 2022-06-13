@@ -1,6 +1,7 @@
 .carousell-photo .my-carousell-photo {
     width: 100%;
-    height: 550px;
+    height: auto;
+    aspect-ratio: 16 / 9;
     margin-top: 20px;
 }
 
@@ -48,18 +49,11 @@
 
 /* --------------- Tablet Carousell Photo Content --------------- */
 @media only screen and (max-width: 900px) { 
-    .carousell-photo .my-carousell-photo {
-        height: 350px;
-    }
 }
 
 
 /* --------------- Mobile Carousell Photo Content --------------- */
 @media only screen and (max-width: 600px) { 
-    .carousell-photo .my-carousell-photo {
-        height: 180px;
-    }
-    
     .my-carousell-photo .swiper-button-prev,
     .my-carousell-photo .swiper-button-next {
         display: none !important;

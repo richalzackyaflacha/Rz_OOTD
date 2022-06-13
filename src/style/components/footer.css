@@ -48,7 +48,7 @@
 }
 .content-ootd .coment input,
 .content-ootd .coment textarea {
-    width: 100%;
+    width: calc(100% - 15px);
     font-size: 15px;
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, 0.5);

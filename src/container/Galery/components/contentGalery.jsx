@@ -24,6 +24,11 @@ import GaleryP2 from "../../../assets/img/StylePhoto1-1.jpg"
 import DetailP2_1 from "../../../assets/img/StylePhoto1-2.jpg"
 import DetailP2_2 from "../../../assets/img/StylePhoto1-3.jpg"
 
+import GaleryP3 from "../../../assets/img/ootdManggarai1.jpg"
+import DetailP3_1 from "../../../assets/img/ootdManggarai2.jpg"
+import DetailP3_2 from "../../../assets/img/ootdManggarai3.jpg"
+import DetailP3_3 from "../../../assets/img/ootdManggarai4.jpg"
+
 const ContentGalery = () => {
     // Data image
     let data = [
@@ -39,6 +44,13 @@ const ContentGalery = () => {
             imgGalery: GaleryP1,
             details: [
                GaleryP1, DetailP1_1, DetailP1_2
+            ]
+        },
+        {
+            id: 3,
+            imgGalery: GaleryP3,
+            details: [
+               GaleryP3, DetailP3_1, DetailP3_2, DetailP3_3
             ]
         },
     ];
